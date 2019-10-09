@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-api-joseryandm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifpi-picos/nodejs-api-joseryandm.git"
+  },
+  "author": "Jose Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifpi-picos/nodejs-api-joseryandm/issues"
+  },
+  "homepage": "https://github.com/ifpi-picos/nodejs-api-joseryandm#readme"
+}
