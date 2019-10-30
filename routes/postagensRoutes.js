@@ -12,11 +12,22 @@ router.post('/', async (req, res) => {
   res.send('Adicionado com sucesso');
 });
 
+router.get('/:id', async (req, res) => {
+  const id = req.params.id;
+  const postagem = await postagensController.getPorId(id);
+  res.send(postagemD);
+});
+
 router.put('/:id', async(req, res) => {
   const id = req.params.id;
-  const postagemDTO = req.body;
   await postagensController.update(id, req.body);
   res.send('Alterado com sucesso')
-})
+});
+
+router.delete('/:id', async(req, res) => {
+  const id = req.params.id;
+  await postagensController.delete(id);
+  res.send('Deletado com sucesso.')
+});
 
 module.exports = router;

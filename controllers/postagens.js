@@ -11,8 +11,17 @@ class Postagens {
     await new PostagemModel(postagemDTO).save();
   }
 
-  async update(id,postagemDTO){
+  async getPorId(id){
+    const postagem = await PostagemModel.find({_id: id});
+    return postagem;
+  }
+
+  async update(id, postagemDTO){
     await PostagemModel.updateOne({_id: id},postagemDTO);
+  }
+
+  async delete(id, postagemDTO){
+    await PostagemModel.deleteOne({_id:id}, postagemDTO);
   }
 
 }
