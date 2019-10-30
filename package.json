@@ -1,19 +1,16 @@
 {
-  "name": "nodejs-api-joseryandm",
+  "name": "nodejs-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ifpi-picos/nodejs-api-joseryandm.git"
-  },
-  "author": "Jose Ryan",
+  "author": "José Ryan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ifpi-picos/nodejs-api-joseryandm/issues"
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.6"
   },
-  "homepage": "https://github.com/ifpi-picos/nodejs-api-joseryandm#readme"
+  "devDependencies": {}
 }
